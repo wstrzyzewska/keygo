@@ -14,14 +14,14 @@ const Index = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5 }}
-        className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
       >
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             See KeyGo in Action
           </h2>
         </div>
-        <div className="aspect-w-16 aspect-h-20 rounded-lg overflow-hidden shadow-xl">
+        <div className="w-full h-[600px] rounded-lg overflow-hidden shadow-xl">
           <iframe
             src="https://www.youtube.com/embed/M6j4b_w1h9Q"
             title="KeyGo Demo Video"
