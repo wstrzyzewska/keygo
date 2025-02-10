@@ -21,7 +21,7 @@ const Index = () => {
             See KeyGo in Action
           </h2>
         </div>
-        <div className="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden shadow-xl">
+        <div className="aspect-w-16 aspect-h-14 rounded-lg overflow-hidden shadow-xl">
           <iframe
             src="https://www.youtube.com/embed/M6j4b_w1h9Q"
             title="KeyGo Demo Video"
