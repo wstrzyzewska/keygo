@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <div className="relative overflow-hidden">
       <HeroSection />
-      
+      <FeaturesSection />
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,13 +18,8 @@ const Index = () => {
       >
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <img 
-              src="/img/keygo-logo.png" 
-              alt="KeyGO Logo" 
-              className="h-12 w-auto"
-            />
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              in Action
+              See KeyGo in Action
             </h2>
           </div>
         </div>
@@ -38,8 +33,6 @@ const Index = () => {
           ></iframe>
         </div>
       </motion.div>
-
-      <FeaturesSection />
       <Footer />
     </div>
   );

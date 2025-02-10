@@ -25,7 +25,7 @@ export default function Navbar() {
               <img
                 src="/img/keygo-logo.png"
                 alt="KEYGO"
-                className="h-23 w-auto"
+                className="h-auto w-auto"
               />
             </Link>
           </div>
