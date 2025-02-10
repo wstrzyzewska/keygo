@@ -13,7 +13,7 @@ export default function Navbar() {
     { name: "Features", href: "/features" },
     { name: "Pricing", href: "/pricing" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" }, // Added Contact to navigation
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function Navbar() {
               <img
                 src="/img/keygo-logo.png"
                 alt="KEYGO"
-                className="h-auto w-auto"
+                className="h-10 w-auto"
               />
             </Link>
           </div>
