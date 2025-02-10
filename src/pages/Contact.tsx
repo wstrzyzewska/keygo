@@ -38,7 +38,7 @@ const Contact = () => {
             {
               icon: MapPin,
               title: "Address",
-              content: "123 Smart Street,\nTech City, TC 12345",
+              content: "123 Smart Street,\nToronto, ON, 12345",
               delay: 0.3
             }
           ].map((item, index) => (

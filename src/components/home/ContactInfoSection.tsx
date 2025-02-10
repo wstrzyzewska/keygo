@@ -59,7 +59,7 @@ const ContactInfoSection = () => {
             <h3 className="mt-6 text-lg font-medium text-gray-900">Address</h3>
             <p className="mt-2 text-base text-gray-500">
               123 Smart Street,<br />
-              Tech City, TC 12345
+              Toronto, ON, 12345
             </p>
           </motion.div>
         </div>

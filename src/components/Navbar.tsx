@@ -23,9 +23,9 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
-                src="/lovable-uploads/cb6a837b-52c0-455f-ad99-b8162b2abdcb.png"
+                src="/img/keygo-logo.png"
                 alt="KEYGO"
-                className="h-12 w-auto"
+                className="h-23 w-auto"
               />
             </Link>
           </div>

@@ -27,8 +27,8 @@ const Login = () => {
       >
         <div>
           <img
-            className="mx-auto h-12 w-auto"
-            src="/lovable-uploads/cb6a837b-52c0-455f-ad99-b8162b2abdcb.png"
+            className="mx-auto h-auto w-auto"
+            src="/img/keygo-logo.png"
             alt="KEYGO"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">

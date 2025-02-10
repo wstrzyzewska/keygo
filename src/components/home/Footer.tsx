@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-keygo-orange mr-2" />
-                <span>123 Smart Street, Tech City, TC 12345</span>
+                <span>123 Smart Street, Toronto, ON, 12345</span>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/about" className="hover:text-keygo-orange transition-colors">
-                  About Us
+                  About
                 </Link>
               </li>
               <li>
