@@ -98,7 +98,7 @@ const Index = () => {
       {/* Footer Section */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
               <div className="space-y-3">
@@ -136,21 +136,6 @@ const Index = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
-              <p className="text-gray-400 mb-4">Stay updated with our latest features and releases.</p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 rounded-l-md text-gray-900 focus:outline-none"
-                />
-                <Button className="bg-keygo-orange hover:bg-keygo-orange/90 rounded-l-none">
-                  Subscribe
-                </Button>
-              </div>
             </div>
           </div>
           
