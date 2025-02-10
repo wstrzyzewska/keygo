@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -196,6 +197,11 @@ const Index = () => {
                 <li>
                   <Link to="/about" className="hover:text-keygo-orange transition-colors">
                     About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-keygo-orange transition-colors">
+                    Contact
                   </Link>
                 </li>
               </ul>
