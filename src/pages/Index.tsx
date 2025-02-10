@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Motion, Presence } from "@motionone/dom";
+import { motion } from "framer-motion";
 import { Key, Lock, Shield } from "lucide-react";
 
 const Index = () => {
@@ -11,7 +11,7 @@ const Index = () => {
       <div className="relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
           <div className="text-center">
-            <Motion
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -20,9 +20,9 @@ const Index = () => {
                 <span className="block">Smart Key Management</span>
                 <span className="block text-keygo-orange">for Modern Real Estate</span>
               </h1>
-            </Motion>
+            </motion.div>
             
-            <Motion
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
@@ -30,10 +30,10 @@ const Index = () => {
               <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                 Streamline your property access with secure, intelligent lockbox solutions. Perfect for real estate professionals and property managers.
               </p>
-            </Motion>
+            </motion.div>
 
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-              <Motion
+              <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
@@ -44,9 +44,9 @@ const Index = () => {
                 >
                   <Link to="/features">Get Started</Link>
                 </Button>
-              </Motion>
+              </motion.div>
               
-              <Motion
+              <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
@@ -58,7 +58,7 @@ const Index = () => {
                 >
                   <Link to="/about">Learn More</Link>
                 </Button>
-              </Motion>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const Index = () => {
           <div className="mt-20">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {features.map((feature, index) => (
-                <Motion
+                <motion.div
                   key={feature.name}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ const Index = () => {
                     <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
                     <p className="mt-2 text-base text-gray-500">{feature.description}</p>
                   </div>
-                </Motion>
+                </motion.div>
               ))}
             </div>
           </div>
