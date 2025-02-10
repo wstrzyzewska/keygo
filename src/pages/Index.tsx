@@ -18,8 +18,13 @@ const Index = () => {
       >
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-4">
+            <img 
+              src="/img/keygo-logo.png" 
+              alt="KeyGO Logo" 
+              className="h-10 w-auto"
+            />
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              See KeyGo in Action
+              in Action
             </h2>
           </div>
         </div>
