@@ -17,7 +17,7 @@ const Index = () => {
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
       >
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-2 mb-4">
+          <div className="flex items-center justify-center gap-1 mb-4">
             <img 
               src="/img/keygo-logo.png" 
               alt="KeyGO Logo" 
