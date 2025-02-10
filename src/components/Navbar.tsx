@@ -18,13 +18,13 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
                 src="/lovable-uploads/cb6a837b-52c0-455f-ad99-b8162b2abdcb.png"
                 alt="KEYGO"
-                className="h-8"
+                className="h-12 w-auto" // Increased from h-8 to h-12
               />
             </Link>
           </div>
