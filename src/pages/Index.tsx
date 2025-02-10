@@ -21,7 +21,7 @@ const Index = () => {
             <img 
               src="/img/keygo-logo.png" 
               alt="KeyGO Logo" 
-              className="h-10 w-auto"
+              className="h-32 w-auto"
             />
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               in Action
