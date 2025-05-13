@@ -14,20 +14,43 @@ const About = () => {
         
         <div className="prose lg:prose-xl mx-auto">
           <p className="text-lg text-gray-600 mb-8">
-            KEYGO is revolutionizing key management and lockbox rental services for
+            KEYGO is revolutionizing key management for
             real estate professionals and property managers. Our mission is to make
             property access secure, efficient, and hassle-free.
           </p>
+          <h2 className="text-2xl font-semibold mb-4 text-keygo-orange">
+            Our Story
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+          The team behind KeyGo has been involved in various property services in the residential sector for 20+ years. This experience has led us to identify integral needs of residential communities, be it condominium corporations, or residential buildings. Such needs revolve around the key principles of security, efficiency and upkeep, all of which the KeyGo platform aims to resolve.
+          <br />
+          <br />
+          At a simple glance, KeyGo is a key management platform. KeyGo’s full functionality however, offers a much more nuanced solution. 
+          <br />
+          <br />
+          Access control is one of the key aspects of safety and security in residential communities. Unauthorized and/or unmonitored access to the property can lead to unfavourable situations in these communities. KeyGo serves to add another layer of security, by centralizing property access through a single, secure, digital platform that allows tracking of all access events. 
+          <br />
+          <br />
+          Conventionally,  key exchange in residential properties is conducted through physical lock boxes, placed by real estate agents/owners in building common areas (e.g. stairwells). This practice is often unmonitored, and outside of the knowledge of building management.
+          <br />
+          <br />
+          Filtering key exchange through the KeyGo platform provides residential communities with superior control over property access, which is further enhanced by the real-time tracking and reporting functionality of the KeyGo software. Building administration no longer needs to manually and actively track physical lockboxes around the premises, which is a time consuming and inefficient process.
+          <br />
+          <br />
+          KeyGo also supports building residents, by providing an efficient solution to them for key exchange to any parties that may be servicing their individual units (e.g. maids, dog walkers, babysitters, etc.).
+          <br />
+          <br />
+          This is the KeyGo solution – a client focussed approach, with needs of the community at the forefront.
 
+          </p>
           <h2 className="text-2xl font-semibold mb-4 text-keygo-orange">
             Who We Serve
           </h2>
           <ul className="space-y-4 mb-8">
             {[
-              "Real Estate Agents & Brokers 🏡",
               "Property Managers & Building Administrators 🏢",
-              "Short-Term Rental Hosts 🏠",
-              "Landlords & Real Estate Investors 📈",
+              "Landlords & Residents 🏠",
+              "Real Estate Agents & Brokers 🏡",
               "Property Management Companies 🏗",
             ].map((item, index) => (
               <motion.li
@@ -68,7 +91,7 @@ const About = () => {
               {
                 title: "Innovation",
                 description:
-                  "Continuously improving our technology to serve you better.",
+                  "Continuously implementing the latest technology solutions to serve you better.",
               },
               {
                 title: "Reliability",

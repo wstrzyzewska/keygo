@@ -7,7 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Index from "./pages/Index";
 import Features from "./pages/Features";
-import Pricing from "./pages/Pricing";
+// import Pricing from "./pages/Pricing"; // currently not in use
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
@@ -27,7 +27,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/features" element={<Features />} />
-              <Route path="/pricing" element={<Pricing />} />
+              {/* <Route path="/pricing" element={<Pricing />} /> */}
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />

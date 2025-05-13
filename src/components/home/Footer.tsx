@@ -33,11 +33,11 @@ const Footer = () => {
                   Features
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/pricing" className="hover:text-keygo-orange transition-colors">
                   Pricing
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/about" className="hover:text-keygo-orange transition-colors">
                   About
