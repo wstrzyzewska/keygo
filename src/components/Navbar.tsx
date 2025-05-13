@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -12,6 +11,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Features", href: "/features" },
     // { name: "Pricing", href: "/pricing" }, // currently not in use
+    { name: "Hardware", href: "/hardware" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
