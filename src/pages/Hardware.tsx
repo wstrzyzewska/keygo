@@ -11,31 +11,26 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Card, CardContent } from "@/components/ui/card";
 
 const HardwareShowcase = () => {
-  const hardwareItems = [
+  const lockboxImages = [
     {
-      title: "Smart Lockbox",
-      description: "Secure and tamper-proof lockbox with digital access control.",
+      title: "Smart Lockbox - Front View",
+      description: "Our sleek and modern digital lockbox with secure touchscreen interface.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: "KeyGO Access Terminal",
-      description: "Modern touch-screen interface for property managers and administrators.",
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      title: "Mobile App Interface",
-      description: "User-friendly mobile application for seamless key access on the go.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      title: "KeyGO Management Console",
-      description: "Advanced dashboard for comprehensive key access management.",
+      title: "Smart Lockbox - Interior",
+      description: "Organized key storage system with LED indicators for easy identification.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: "Enterprise Security System",
-      description: "End-to-end solution for large-scale property key management.",
+      title: "Smart Lockbox - In Use",
+      description: "Authorized personnel accessing the digital lockbox in a real-world setting.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      title: "Mobile App Integration",
+      description: "Control and monitor your lockbox remotely with our intuitive mobile application.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
     },
   ];
 
@@ -47,10 +42,10 @@ const HardwareShowcase = () => {
         transition={{ duration: 0.5 }}
         className="text-center mb-16"
       >
-        <h1 className="text-4xl font-bold mb-4">KeyGO Hardware</h1>
+        <h1 className="text-4xl font-bold mb-4">KeyGO Digital Lockbox</h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Explore our innovative key management hardware solutions and mobile applications
-          designed for security, efficiency, and ease of use.
+          Our innovative digital lockbox solution provides secure, 
+          automated key management with real-time tracking and remote access control.
         </p>
       </motion.div>
 
@@ -64,28 +59,27 @@ const HardwareShowcase = () => {
         <AspectRatio ratio={16 / 9} className="bg-muted overflow-hidden rounded-lg shadow-xl">
           <img
             src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80"
-            alt="KeyGO Hardware Ecosystem"
+            alt="KeyGO Digital Lockbox"
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center">
             <div className="p-8 md:p-16 max-w-2xl text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">The KeyGO Ecosystem</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Digital Lockbox</h2>
               <p className="text-base md:text-lg">
-                Our integrated hardware and software solutions provide seamless key management
-                for properties of any size.
+                The most advanced digital lockbox solution for secure and efficient key management.
               </p>
             </div>
           </div>
         </AspectRatio>
       </motion.div>
 
-      {/* Hardware Showcase Carousel */}
+      {/* Lockbox Showcase Carousel */}
       <div className="mb-24">
-        <h2 className="text-3xl font-bold mb-8 text-center">KeyGO Products</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Lockbox Gallery</h2>
         <Carousel className="w-full max-w-6xl mx-auto">
           <CarouselContent>
-            {hardwareItems.map((item, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            {lockboxImages.map((item, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                 <div className="p-2">
                   <Card className="overflow-hidden">
                     <AspectRatio ratio={4/3}>
@@ -111,6 +105,52 @@ const HardwareShowcase = () => {
         </Carousel>
       </div>
 
+      {/* Digital Lockbox Features */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="mb-24"
+      >
+        <h2 className="text-3xl font-bold mb-8 text-center">Digital Lockbox Features</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Secure Access Control",
+              description: "Biometric authentication, PIN codes, and RFID card access options for maximum security."
+            },
+            {
+              title: "Real-Time Tracking",
+              description: "Know exactly who accessed which keys and when with detailed digital logs."
+            },
+            {
+              title: "Remote Management",
+              description: "Grant or revoke access permissions instantly from anywhere using our mobile app."
+            },
+            {
+              title: "Tamper Detection",
+              description: "Built-in sensors alert administrators of any unauthorized access attempts."
+            },
+            {
+              title: "Automatic Notifications",
+              description: "Receive instant alerts when keys are checked out, returned, or overdue."
+            },
+            {
+              title: "Expandable Design",
+              description: "Modular system that can grow with your property management needs."
+            }
+          ].map((feature, index) => (
+            <Card key={index} className="h-full">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </motion.div>
+
       {/* Mobile App Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -121,7 +161,7 @@ const HardwareShowcase = () => {
       >
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6">The KeyGO Mobile Experience</h2>
+            <h2 className="text-3xl font-bold mb-6">Mobile Control</h2>
             <ul className="space-y-4">
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-keygo-orange text-white grid place-items-center">1</span>
@@ -147,8 +187,8 @@ const HardwareShowcase = () => {
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-keygo-orange text-white grid place-items-center">4</span>
                 <div>
-                  <h3 className="font-semibold text-xl">Role-Based Permissions</h3>
-                  <p className="text-gray-600">Granular control over who can access which keys.</p>
+                  <h3 className="font-semibold text-xl">Remote Authorization</h3>
+                  <p className="text-gray-600">Grant temporary access to contractors or staff as needed.</p>
                 </div>
               </li>
             </ul>
@@ -166,89 +206,6 @@ const HardwareShowcase = () => {
         </div>
       </motion.div>
 
-      {/* Technical Specifications */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="mb-24"
-      >
-        <h2 className="text-3xl font-bold mb-8 text-center">Technical Specifications</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Security",
-              specs: [
-                "256-bit encryption",
-                "Tamper detection",
-                "Reinforced steel housing",
-                "Biometric authentication options"
-              ]
-            },
-            {
-              title: "Connectivity",
-              specs: [
-                "Wi-Fi 802.11 a/b/g/n/ac",
-                "Bluetooth 5.0",
-                "LTE connectivity option",
-                "Mesh networking capability"
-              ]
-            },
-            {
-              title: "Power",
-              specs: [
-                "Rechargeable battery (up to 6 months)",
-                "Low-power standby mode",
-                "Power loss notification",
-                "Optional hardwired connection"
-              ]
-            },
-            {
-              title: "Capacity",
-              specs: [
-                "Small: 10 key capacity",
-                "Medium: 50 key capacity",
-                "Large: 200 key capacity",
-                "Custom configurations available"
-              ]
-            },
-            {
-              title: "Integrations",
-              specs: [
-                "Property management software",
-                "Access control systems",
-                "Security monitoring platforms",
-                "Custom API integration"
-              ]
-            },
-            {
-              title: "Compliance",
-              specs: [
-                "GDPR compliant",
-                "ISO 27001 certified",
-                "SOC 2 Type II compliant",
-                "ADA accessible design"
-              ]
-            }
-          ].map((section, index) => (
-            <Card key={index} className="h-full">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4">{section.title}</h3>
-                <ul className="space-y-2">
-                  {section.specs.map((spec, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span className="text-keygo-orange mt-1">•</span>
-                      <span>{spec}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </motion.div>
-
       {/* Call to Action */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -257,7 +214,7 @@ const HardwareShowcase = () => {
         transition={{ duration: 0.5 }}
         className="text-center bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16 px-4 rounded-xl"
       >
-        <h2 className="text-3xl font-bold mb-6">Experience KeyGO Today</h2>
+        <h2 className="text-3xl font-bold mb-6">Experience KeyGO Digital Lockbox Today</h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
           Ready to revolutionize your key management system? Contact us for a personalized demo
           and consultation for your property.
@@ -266,7 +223,7 @@ const HardwareShowcase = () => {
           <a href="/contact" className="bg-keygo-orange hover:bg-keygo-orange/90 text-white px-8 py-3 rounded-md font-medium">
             Request Demo
           </a>
-          <a href="/features" className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-md font-medium">
+          <a href="/about" className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-md font-medium">
             Learn More
           </a>
         </div>
