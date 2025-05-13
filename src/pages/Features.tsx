@@ -105,15 +105,15 @@ const Features = () => {
         </Carousel>
       </div>
 
-      {/* Mobile App Section */}
-      <motion.div
+{/* Mobile App Section with Customizable Phone Image */}
+<motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         className="mb-24"
       >
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center ml-12">
           <div>
             <h2 className="text-3xl font-bold mb-6">Mobile Control</h2>
             <ul className="space-y-4">
@@ -148,14 +148,26 @@ const Features = () => {
             </ul>
           </div>
           <div className="relative">
+            {/* Decorative background gradient */}
             <div className="absolute -top-6 -bottom-6 -left-6 -right-6 bg-gradient-to-br from-keygo-orange/10 to-transparent rounded-2xl -z-10"></div>
-            <AspectRatio ratio={9/16} className="border-8 border-gray-800 rounded-3xl shadow-2xl overflow-hidden max-w-xs mx-auto h-xs">
-              <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&h=900&q=80"
-                alt="KeyGO Mobile App"
-                className="object-cover w-full h-full"
-              />
-            </AspectRatio>
+            
+            {/* Mobile phone container - you can control the phone image here */}
+            <div className="mx-auto max-w-[300px]">
+              {/* Phone frame - adjust border, shadow, etc. here */}
+              <div className="border-8 border-gray-800 rounded-3xl shadow-2xl overflow-hidden relative">
+                {/* Phone screen - control the screen content image here */}
+                <AspectRatio ratio={9/16} className="bg-white">
+                  <img
+                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&h=900&q=80"
+                    alt="KeyGO Mobile App"
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+                
+                {/* Optional: Phone notch */}
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-7 bg-gray-800 rounded-b-xl"></div>
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>
