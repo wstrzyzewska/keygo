@@ -113,8 +113,8 @@ const Features = () => {
         transition={{ duration: 0.5 }}
         className="mb-24"
       >
-        <div className="grid md:grid-cols-2 gap-12 items-center ml-12">
-          <div>
+        <div className="grid md:grid-cols-2 gap-12 items-center ml-12 md:ml-12 sm:ml-0">
+          <div className="order-2 md:order-1">
             <h2 className="text-3xl font-bold mb-6">Mobile Control</h2>
             <ul className="space-y-4">
               <li className="flex gap-3">
@@ -147,7 +147,7 @@ const Features = () => {
               </li>
             </ul>
           </div>
-          <div className="relative">
+          <div className="relative order-1 md:order-2 flex justify-center">
             {/* Decorative background gradient */}
             <div className="absolute -top-6 -bottom-6 -left-6 -right-6 bg-gradient-to-br from-keygo-orange/10 to-transparent rounded-2xl -z-10"></div>
             
