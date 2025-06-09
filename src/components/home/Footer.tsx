@@ -12,15 +12,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-keygo-orange mr-2" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (416) 937-5397</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-keygo-orange mr-2" />
-                <span>contact@keygo.com</span>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="h-5 w-5 text-keygo-orange mr-2" />
-                <span>123 Smart Street, Toronto, ON, 12345</span>
+                <span>info@keygosystems.com</span>
               </div>
             </div>
           </div>
@@ -33,11 +29,6 @@ const Footer = () => {
                   Features
                 </Link>
               </li>
-              {/* <li>
-                <Link to="/pricing" className="hover:text-keygo-orange transition-colors">
-                  Pricing
-                </Link>
-              </li> */}
               <li>
                 <Link to="/about" className="hover:text-keygo-orange transition-colors">
                   About

@@ -16,7 +16,7 @@ const ContactInfoSection = () => {
           </p>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ const ContactInfoSection = () => {
             </div>
             <h3 className="mt-6 text-lg font-medium text-gray-900">Phone</h3>
             <p className="mt-2 text-base text-gray-500">
-              +1 (555) 123-4567
+              +1 (416) 937-5397
             </p>
           </motion.div>
 
@@ -43,23 +43,7 @@ const ContactInfoSection = () => {
             </div>
             <h3 className="mt-6 text-lg font-medium text-gray-900">Email</h3>
             <p className="mt-2 text-base text-gray-500">
-              contact@keygo.com
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-center"
-          >
-            <div className="flex justify-center">
-              <MapPin className="h-12 w-12 text-keygo-orange" />
-            </div>
-            <h3 className="mt-6 text-lg font-medium text-gray-900">Address</h3>
-            <p className="mt-2 text-base text-gray-500">
-              123 Smart Street,<br />
-              Toronto, ON, 12345
+              info@keygosystems.com
             </p>
           </motion.div>
         </div>

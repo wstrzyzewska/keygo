@@ -30,7 +30,12 @@ const Index = () => {
             </h2>
           </div>
         </div>
-        <div className="w-full h-[600px] rounded-lg overflow-hidden shadow-xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Stay tuned for the demo tutorial
+          </h2>
+        </div>
+        {/* <div className="w-full h-[600px] rounded-lg overflow-hidden shadow-xl">
           <iframe
             src="https://www.youtube.com/embed/M6j4b_w1h9Q"
             title="KeyGo Demo Video"
@@ -38,7 +43,7 @@ const Index = () => {
             allowFullScreen
             className="w-full h-full"
           ></iframe>
-        </div>
+        </div> */}
       </motion.div>
       
       <motion.div
@@ -51,7 +56,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Clients We Serve
+              Clients we serve
             </h2>
             <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
               Trusted by property management companies and residential buildings across the country.

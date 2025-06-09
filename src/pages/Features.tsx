@@ -56,11 +56,11 @@ const Features = () => {
         transition={{ duration: 0.7 }}
         className="mb-20"
       >
-        <AspectRatio ratio={16 / 9} className="bg-muted overflow-hidden rounded-lg shadow-xl">
+        <AspectRatio ratio={16/9} className="bg-muted overflow-hidden rounded-lg shadow-xl flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80"
+            src="/img/keygo-lockbox.png"
             alt="KeyGO Digital Lockbox"
-            className="object-cover w-full h-full"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center">
             <div className="p-8 md:p-16 max-w-2xl text-white">

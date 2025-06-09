@@ -21,26 +21,20 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2">
           {[
             {
               icon: Phone,
               title: "Phone",
-              content: "+1 (555) 123-4567",
+              content: "+1 (416) 937-5397",
               delay: 0.1
             },
             {
               icon: Mail,
               title: "Email",
-              content: "contact@keygo.com",
+              content: "info@keygosystems.com",
               delay: 0.2
             },
-            {
-              icon: MapPin,
-              title: "Address",
-              content: "123 Smart Street,\nToronto, ON, 12345",
-              delay: 0.3
-            }
           ].map((item, index) => (
             <motion.div
               key={index}
