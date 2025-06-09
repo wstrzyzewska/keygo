@@ -3,14 +3,6 @@
 
 KeyGO is a revolutionary digital lockbox system that provides secure, automated key management with real-time tracking and remote access control. Our solution serves residential buildings and property management companies, streamlining access control for residents, visitors, and maintenance staff.
 
-## 🚀 Features
-
-- **Digital Lockbox Hardware** - Secure touchscreen interface with LED indicators
-- **Mobile App Control** - Remote authorization and real-time tracking
-- **Biometric Security** - Advanced authentication protocols
-- **Real-time Notifications** - Instant alerts for key access and returns
-- **Multi-client Support** - Serving residential buildings and property management companies
-
 ## 🛠️ Technologies Used
 
 This project is built with modern web technologies:
@@ -129,14 +121,6 @@ Popular hosting options:
 - [Netlify](https://netlify.com/)
 - [GitHub Pages](https://pages.github.com/)
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is proprietary software owned by KeyGO. All rights reserved.
@@ -144,7 +128,3 @@ This project is proprietary software owned by KeyGO. All rights reserved.
 ## 📞 Contact
 
 For more information about KeyGO and our digital lockbox solutions, visit our website or contact our team through the contact page.
-
----
-
-Built with ❤️ by the KeyGO team
