@@ -6,7 +6,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Index from "./pages/Index";
-// import Pricing from "./pages/Pricing"; // currently not in use
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";

@@ -3,7 +3,6 @@
 
 KeyGO is a revolutionary digital lockbox system that provides secure, automated key management with real-time tracking and remote access control. Our solution serves residential buildings and property management companies, streamlining access control for residents, visitors, and maintenance staff.
 
-<<<<<<< Updated upstream
 ## 🛠️ Technologies Used
 
 This project is built with modern web technologies:
@@ -129,13 +128,3 @@ This project is proprietary software owned by KeyGO. All rights reserved.
 ## 📞 Contact
 
 For more information about KeyGO and our digital lockbox solutions, visit our website or contact our team through the contact page.
-=======
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How to run the project?
-npm run dev
->>>>>>> Stashed changes
